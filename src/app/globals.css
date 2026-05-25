@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  /* Softer slate background for a more breathable, less suffocating feel */
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+  --font-inter: 'Inter', sans-serif;
+  
+  /* Cyber-blue/green glow variables */
+  --cyber-primary: #00f0ff;
+  --cyber-glow: rgba(0, 240, 255, 0.15);
+  --cyber-glow-hover: rgba(0, 240, 255, 0.3);
+}
+
+* {
+  /* Firefox modern thin scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.1) var(--background);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  /* Wider, softer radial-gradient background glow */
+  background-image: radial-gradient(circle at 50% 0%, var(--cyber-glow) 0%, transparent 100%);
+  background-attachment: fixed;
+  font-family: var(--font-inter);
+  overflow-x: hidden;
+}
+
+/* Webkit modern thin scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyber-primary);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Utility class to apply the cyber glow effect on hover */
+  .hover-cyber-glow {
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .hover-cyber-glow:hover {
+    box-shadow: 0 0 25px var(--cyber-glow-hover);
+    border-color: var(--cyber-primary);
+  }
+
+  /* Utility class for a cyber gradient text effect */
+  .text-gradient-cyber {
+    background: linear-gradient(to right, var(--cyber-primary), #00ff66);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+}
