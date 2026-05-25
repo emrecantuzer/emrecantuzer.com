@@ -17,7 +17,7 @@ const Divider = () => (
 export default function Home() {
   return (
     <PageTransition>
-      <main className="min-h-screen bg-slate-900 text-slate-100 selection:bg-primary/30 relative overflow-x-hidden">
+      <main className="min-h-screen bg-slate-900 text-slate-100 selection:bg-primary/30 relative">
         {/* Ambient Glow */}
         <div className="fixed inset-0 z-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none" />
         {/* Blueprint Cyber Grid Background Overlay - Softer and wider */}

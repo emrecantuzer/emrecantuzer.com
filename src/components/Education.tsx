@@ -9,7 +9,7 @@ const education = [
         degree: "MSc. in Cybersecurity Engineering / Network Security (BGK)",
         period: "July 2023 – Ongoing",
         location: "Istanbul, Turkey",
-        description: "Academic focus with mentors like Prof. Kemal Bıçakçı and Dr. İbrahim Çelikbilek.",
+        description: "",
         logo: "/itu_logo.png",
         transparentBg: true
     },
