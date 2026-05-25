@@ -19,10 +19,10 @@ export const metadata: Metadata = {
     siteName: "Emre Can Tüzer",
     images: [
       {
-        url: "/og-image-v2.png",
+        url: "/emre-can-tuzer-og.png",
         width: 1200,
         height: 630,
-        alt: "Emre Can Tüzer - Cyber Security Professional",
+        alt: "Emre Can Tüzer - Network Security Professional",
       },
     ],
     locale: "en_US",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Emre Can Tüzer | Cyber Security Portfolio",
     description: "Portfolio of Emre Can Tüzer - Senior Network & Security Operations Engineer",
-    images: ["/og-image-v2.png"],
+    images: ["/emre-can-tuzer-og.png"],
     creator: "@emrecantuzer",
   },
   robots: {
@@ -77,7 +77,7 @@ export default function RootLayout({
       "https://linkedin.com/in/emrecantuzer",
     ],
     description: "Senior Network & Security Operations Engineer specializing in network security architectures, critical infrastructure protection, and network automation.",
-    image: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://emrecantuzer.com'}/og-image-v2.png`,
+    image: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://emrecantuzer.com'}/emre-can-tuzer-og.png`,
     knowsAbout: ["Network Security", "Palo Alto", "Fortinet", "CyberArk", "Wallix", "Python", "Docker", "Machine Learning"],
   };
 
